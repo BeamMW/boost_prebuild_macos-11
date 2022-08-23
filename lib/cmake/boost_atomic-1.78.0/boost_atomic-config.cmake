@@ -15,10 +15,10 @@ mark_as_advanced(boost_atomic_DIR)
 get_filename_component(_BOOST_CMAKEDIR "${CMAKE_CURRENT_LIST_DIR}/../" REALPATH)
 
 # If the computed and the original directories are symlink-equivalent, use original
-if(EXISTS "/Users/runner/work/beam/boost_prebuild_x86_64/lib/cmake")
-  get_filename_component(_BOOST_CMAKEDIR_ORIGINAL "/Users/runner/work/beam/boost_prebuild_x86_64/lib/cmake" REALPATH)
+if(EXISTS "/Users/runner/work/beam/boost_prebuild/lib/cmake")
+  get_filename_component(_BOOST_CMAKEDIR_ORIGINAL "/Users/runner/work/beam/boost_prebuild/lib/cmake" REALPATH)
   if(_BOOST_CMAKEDIR STREQUAL _BOOST_CMAKEDIR_ORIGINAL)
-    set(_BOOST_CMAKEDIR "/Users/runner/work/beam/boost_prebuild_x86_64/lib/cmake")
+    set(_BOOST_CMAKEDIR "/Users/runner/work/beam/boost_prebuild/lib/cmake")
   endif()
   unset(_BOOST_CMAKEDIR_ORIGINAL)
 endif()
